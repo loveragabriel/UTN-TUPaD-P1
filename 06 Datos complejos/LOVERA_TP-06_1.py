@@ -28,17 +28,39 @@ desarrollado en el punto anterior, actualizar los precios de las siguientes frut
 ● Banana = 1330
 ● Manzana = 1700
 ● Melón = 2800
-'''
+
 precios_frutas['Banana'] = 1330
 precios_frutas['Manzana'] = 1700
 precios_frutas['Melón'] = 2800
 
 print(F"Precio de Frutas actualizados: {precios_frutas}")
-
+'''
 '''
 3) Siguiendo con el diccionario precios_frutas que resulta luego de ejecutar el código
 desarrollado en el punto anterior, crear una lista que contenga únicamente las frutas sin los
 precios.
-'''
 listado_de_frutas = precios_frutas.keys()
 print(listado_de_frutas)
+'''
+'''
+4) Escribí un programa que permita almacenar y consultar números telefónicos.
+• Permití al usuario cargar 5 contactos con su nombre como clave y número como valor.
+• Luego, pedí un nombre y mostrale el número asociado, si existe.
+'''
+
+diccionario_telefonico = {}
+
+for i in range(5):
+    nombre = input("Ingrese un Nombre: ")
+    numero = input("Indique ahora un numero: ")
+    diccionario_telefonico[nombre]= numero
+
+def preguntar_nombre(nombre, diccionario):
+    nombre = input
+    if nombre in diccionario:
+        print(f"El numero para {nombre} es {diccionario[nombre]}")
+    else: print(f"No hay registro para el nombre {nombre}")
+
+nombre = input("Ingrese un nombre para buscar su numero")
+preguntar_nombre(nombre, diccionario_telefonico)
+            
